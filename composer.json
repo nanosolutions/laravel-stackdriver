@@ -23,8 +23,8 @@
         "illuminate/support": ">=5.7",
         "google/cloud-error-reporting": "^0.16.2",
         "google/cloud-logging": "^1.14",
-        "opencensus/opencensus": "^0.5.2",
-        "opencensus/opencensus-exporter-stackdriver": "^0.1",
+        "opencensus/opencensus": "dev-master",
+        "opencensus/opencensus-exporter-stackdriver": "dev-master",
         "php": ">=7.1"
     },
     "require-dev": {
@@ -33,6 +33,16 @@
         "orchestra/testbench": "~3.0",
         "sempro/phpunit-pretty-print": "^1.0"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:nanosolutions/opencensus-php.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:nanosolutions/opencensus-php-exporter-stackdriver.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "GlueDev\\Laravel\\Stackdriver\\": "src/"
